@@ -34,10 +34,11 @@ module Administrate
       end
 
       def create_resource_controller
-        template(
-          "controller.rb.erb",
-          Rails.root.join("app/controllers/admin/#{file_name.pluralize}_controller.rb"),
+        destination = Rails.root.join(
+          "app/controllers/admin/#{file_name.pluralize}_controller.rb",
         )
+
+        template("controller.rb.erb", destination)
       end
 
       private
