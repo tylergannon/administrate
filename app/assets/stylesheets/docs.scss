@@ -3,44 +3,47 @@ $red: #CF726E;
 $green: #5BC89E;
 $white: #f0f0f0;
 
-html, body {
-  margin: 0;
-
-  line-height: 1.62em;
+html,
+body {
   font-family: 'Lato', serif;
   font-size: 18px;
+  line-height: 1.62em;
+  margin: 0;
 }
 
 img {
   max-width: 100%;
 }
 
-h1, h2, h3 {
-  margin-top: 2em;
+h1,
+h2,
+h3 {
   font-family: 'Fjalla One', sans-serif;
+  margin-top: 2em;
 }
 
 code {
   font-size: .8rem;
   padding: .4em .2em 0;
-  font-family: 'Source Code Pro', ;
+  font-family: 'Source Code Pro';
 }
 
 a {
-  text-decoration: none;
   color: $blue;
+  text-decoration: none;
 }
 
 .content {
-  width: 61em;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  margin-bottom: 2em;
+  width: 61em;
 
   .sidebar {
-    width: 20em;
     float: left;
+    width: 20em;
+
     &-links {
       list-style: none;
       padding-left: 0;
@@ -48,41 +51,45 @@ a {
   }
 
   .main {
-    width: 40em;
     float: right;
+    width: 40em;
   }
 }
 
 .flash-wrapper {
   background-color: $red;
-  padding: 1em;
   color: $white;
+  padding: 1em;
 
   .flash {
-    width: 40em;
     margin-left: auto;
     margin-right: auto;
+    width: 40em;
   }
 }
 
 table {
+  font-size: 1rem;
   width: 100%;
+
   thead {
     text-align: left;
   }
+
   th {
     border-bottom: 1px solid #aaa;
   }
+
   th, td {
     padding: .5em;
     padding-left: 0.5em;
     padding-right: 2.5em;
     &:last-child { padding-right: 0.5em; }
   }
+
   tr:nth-child(2n) {
     background-color: #eee;
   }
-  font-size: 1rem;
 }
 
 code.hljs {
@@ -102,7 +109,9 @@ code.hljs {
   .hljs-constant { color: $blue; }
   .hljs-symbol { color: $cyan; }
   .hljs-keyword { color: $yellow; }
-  .hljs-title, .hljs-parent { color: $blue; }
+
+  .hljs-title,
+  .hljs-parent { color: $blue; }
 
   .hljs-tag { color: $yellow; }
 }
