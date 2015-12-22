@@ -1,6 +1,6 @@
-$blue: #53ADC6;
-$red: #CF726E;
-$green: #5BC89E;
+$blue: #53adc6;
+$red: #cf726e;
+$green: #5bc89e;
 $white: #f0f0f0;
 
 html,
@@ -20,12 +20,6 @@ h2,
 h3 {
   font-family: 'Fjalla One', sans-serif;
   margin-top: 2em;
-}
-
-code {
-  font-size: .8rem;
-  padding: .4em .2em 0;
-  font-family: 'Source Code Pro';
 }
 
 a {
@@ -68,50 +62,32 @@ a {
   }
 }
 
-table {
-  font-size: 1rem;
-  width: 100%;
+code {
+  font-family: "Source Code Pro";
+  font-size: 0.8rem;
+  padding: 0.4em 0.2em 0;
 
-  thead {
-    text-align: left;
+  &.hljs {
+    $black: #202020;
+    $white: #e0e0dc;
+    $green: #b0bf82;
+    $blue: #8fbdcc;
+    $cyan: #b95c56;
+    $yellow: #f8d29d;
+    $red: #b95c56;
+
+    background-color: $black;
+    color: $white;
+    padding-left: 1rem;
+
+    .hljs-string { color: $green; }
+    .hljs-constant { color: $blue; }
+    .hljs-symbol { color: $cyan; }
+    .hljs-keyword { color: $yellow; }
+
+    .hljs-title,
+    .hljs-parent { color: $blue; }
+
+    .hljs-tag { color: $yellow; }
   }
-
-  th {
-    border-bottom: 1px solid #aaa;
-  }
-
-  th, td {
-    padding: .5em;
-    padding-left: 0.5em;
-    padding-right: 2.5em;
-    &:last-child { padding-right: 0.5em; }
-  }
-
-  tr:nth-child(2n) {
-    background-color: #eee;
-  }
-}
-
-code.hljs {
-  $black: #202020;
-  $white: #E0E0DC;
-  $green: #B0BF82;
-  $blue: #8FBDCC;
-  $cyan: #B95C56;
-  $yellow: #F8D29D;
-  $red: #B95C56;
-
-  background-color: $black;
-  color: $white;
-  padding-left: 1rem;
-
-  .hljs-string { color: $green; }
-  .hljs-constant { color: $blue; }
-  .hljs-symbol { color: $cyan; }
-  .hljs-keyword { color: $yellow; }
-
-  .hljs-title,
-  .hljs-parent { color: $blue; }
-
-  .hljs-tag { color: $yellow; }
 }
