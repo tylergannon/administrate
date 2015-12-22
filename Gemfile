@@ -9,6 +9,9 @@ gem "high_voltage"
 gem "pg"
 gem "unicorn"
 
+gem "markdown-rails"
+gem "redcarpet"
+
 group :development do
   gem "web-console", ">= 2.1.3"
 end
