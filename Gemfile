@@ -4,6 +4,7 @@ ruby "2.2.3"
 
 gemspec
 
+gem 'rails', '>= 5.0.0.beta1', '< 5.1'
 gem "delayed_job_active_record"
 gem "high_voltage"
 gem "markdown-rails"
@@ -25,15 +26,22 @@ group :development, :test do
   gem "faker"
   gem "i18n-tasks"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.1.0"
+
+  gem "rspec-core", github: "rspec/rspec-core"
+  gem "rspec-rails", github: "rspec/rspec-rails"
+  gem "rspec-mocks", github: "rspec/rspec-mocks"
+  gem "rspec-support", github: "rspec/rspec-support"
+  gem "rspec-expectations", github: "rspec/rspec-expectations"
 end
 
 group :test do
   gem "ammeter"
   gem "database_cleaner"
   gem "formulaic"
-  gem "fuubar"
+  # gem "fuubar"
   gem "launchy"
+  gem "rails-controller-testing"
+  gem "capybara", github: "jnicklas/capybara"
   gem "percy-capybara"
   gem "poltergeist"
   gem "shoulda-matchers", "~> 2.8.0", require: false
