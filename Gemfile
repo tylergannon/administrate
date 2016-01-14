@@ -27,11 +27,11 @@ group :development, :test do
   gem "i18n-tasks"
   gem "pry-rails"
 
-  gem "rspec-core", github: "rspec/rspec-core"
-  gem "rspec-rails", github: "rspec/rspec-rails"
-  gem "rspec-mocks", github: "rspec/rspec-mocks"
-  gem "rspec-support", github: "rspec/rspec-support"
-  gem "rspec-expectations", github: "rspec/rspec-expectations"
+  gem "rspec-core",         git: "https://github.com/rspec/rspec-core"
+  gem "rspec-rails",        git: "https://github.com/rspec/rspec-rails"
+  gem "rspec-mocks",        git: "https://github.com/rspec/rspec-mocks"
+  gem "rspec-support",      git: "https://github.com/rspec/rspec-support"
+  gem "rspec-expectations", git: "https://github.com/rspec/rspec-expectations"
 end
 
 group :test do
@@ -41,7 +41,7 @@ group :test do
   # gem "fuubar"
   gem "launchy"
   gem "rails-controller-testing"
-  gem "capybara", github: "jnicklas/capybara"
+  gem "capybara",           git: "https://github.com/jnicklas/capybara"
   gem "percy-capybara"
   gem "poltergeist"
   gem "shoulda-matchers", "~> 2.8.0", require: false
